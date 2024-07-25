@@ -22,7 +22,7 @@ android {
     }
 
     buildTypes {
-        release {
+        getByName("release") {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -40,7 +40,6 @@ android {
 }
 
 dependencies {
-    implementation ("com.github.denzcoskun:ImageSlideshow:0.1.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -51,5 +50,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
+    implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
 }
