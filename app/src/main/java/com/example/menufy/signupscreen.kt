@@ -24,5 +24,12 @@ class signupscreen : AppCompatActivity() {
             ) // Ensure the class name starts with a capital letter
             startActivity(intent)
         }
+        binding.button6.setOnClickListener {
+            val intent = Intent(
+                this,
+                LoginScreen::class.java
+            ) // Ensure the class name starts with a capital letter
+            startActivity(intent)
+        }
     }
 }
